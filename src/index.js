@@ -22,7 +22,6 @@ const App = () => {
       .catch(err => console.log(err));
   }, []);
 
-  console.log(darkMode, setDarkMode)
   return (
     <div className={darkMode ? "dark-mode App" : "App"}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
